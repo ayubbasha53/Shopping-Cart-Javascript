@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery Cart</title>
+    <link href="./assets/CSS/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Grocery Cart</h1>
+    <label for="item-name-input">Item Name:</label>
+    <input type="text" id="item-name-input" data-ns-test="item-name" />
+
+    <label for="item-price-input">Item Price:</label>
+    <input type="number" id="item-price-input" data-ns-test="item-price" />
+
+    <button id="add-button">Add</button>
+
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+      <tfoot>
+        <tr>
+          <td class="grand-total-label">Grand Total:</td>
+          <td class="grand-total-value" data-ns-test="grandTotal">0</td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
